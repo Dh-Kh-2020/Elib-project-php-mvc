@@ -1,0 +1,15 @@
+{
+    "name": "engdhohakhorasani/elib-project-php-mvc",
+    "autoload": {
+        "psr-4": {
+            "Engdhohakhorasani\\ElibProjectPhpMvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dhoha Alkhorasani",
+            "email": "raihanahit2016@gmail.com"
+        }
+    ],
+    "require": {}
+}
