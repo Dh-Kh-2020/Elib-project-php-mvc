@@ -2,7 +2,7 @@
     "name": "engdhohakhorasani/elib-project-php-mvc",
     "autoload": {
         "psr-4": {
-            "Engdhohakhorasani\\ElibProjectPhpMvc\\": "src/"
+            "coding\\": "./"
         }
     },
     "authors": [
