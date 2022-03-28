@@ -1,4 +1,5 @@
 <?php
-require_once 'app/system/appSystem.php';
+use coding\app\system\AppSystem;
+require_once __DIR__ . '/vendor/autoload.php';
 
-$app = new AppSystem();
+$app = new AppSystem;       // equals to $app = new AppSystem();
