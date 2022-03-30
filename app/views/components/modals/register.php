@@ -1,7 +1,7 @@
 <div class="model model--top model__register">
     <div class="model__container">
         <h1 class="model__title">إنشاء حساب </h1>
-        <a id="close__register"><img src="../public/images/icon/cancel.svg" alt=""></a>
+        <a id="close__register"><img src="../../images/icon/cancel.svg" alt=""></a>
         <div class="model__item">
             <form action="" class="model__form">
                 <div class="model__phone">
@@ -12,7 +12,7 @@
                     <div>
                         <label for="country">رمز البلد</label>
                         <select name="" id="country">
-                            <option value=""><img src="../public/images/icon/country.svg">+967</option>
+                            <option value=""><img src="../../images/icon/country.svg">+967</option>
                             <option value="">+970</option>
                         </select>
                     </div>

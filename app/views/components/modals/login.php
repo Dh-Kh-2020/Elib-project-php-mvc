@@ -1,7 +1,7 @@
 <div class="model model__login">
     <div class="model__container">
         <h1 class="model__title">تسجيل الدخول</h1>
-        <a id="close__login"><img src="../public/images/icon/cancel.svg" alt=""></a>
+        <a id="close__login"><img src="../../images/icon/cancel.svg" alt=""></a>
         <div class="model__item">
             <form action="" class="model__form">
                 <div class="model__input">
