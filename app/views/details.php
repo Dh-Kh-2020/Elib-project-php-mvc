@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <?php include_once('./components/meta.php'); ?>
+    <?php include_once __DIR__. '/components/meta.php'; ?>
     <title>تفاصيل</title>
 </head>
 <body>
     
-    <?php 
+<?php 
         // Start Navigation
-        include_once('./components/nav.php'); 
+        include_once __DIR__. '/components/nav.php'; 
         // End Navigation
         
         // Start Header
-        include_once('./components/header.php'); 
+        include_once __DIR__. '/components/header.php'; 
         // End Header
 
         // Start Banner
-        include_once('./components/baner.php');
+        include_once __DIR__. '/components/baner.php';
         // End Banner
     ?>
 
@@ -37,12 +37,12 @@
             <section class="images-book">
                 <div class="card card--shadow card--details card--86w">
                     <figure>
-                        <img id="img-main" src="assets/images/product/book1.jpg" alt="" class="card__img">
+                        <img id="img-main" src="../images/product/book1.jpg" alt="" class="card__img">
                     </figure>
                     <div class="imges">
-                        <img src="assets/images/product/book2.jpg" alt="" class="img__item img">
-                        <img src="assets/images/product/book1.jpg" alt="" class="img__item img">
-                        <img src="assets/images/product/book3.jpg" alt="" class="img__item img">
+                        <img src="../images/product/book2.jpg" alt="" class="img__item img">
+                        <img src="../images/product/book1.jpg" alt="" class="img__item img">
+                        <img src="../images/product/book3.jpg" alt="" class="img__item img">
                     </div>
                 </div>
             </section>
@@ -54,7 +54,7 @@
                         <h1>لأنك الله (كتاب إلكتروني)</h1>
                     </div>
                     <div class="book-link">
-                        <a href="" class="book-link--cyan">عرض المزيد<img src="assets/images/icon/more.svg"></a>
+                        <a href="" class="book-link--cyan">عرض المزيد<img src="../images/icon/more.svg"></a>
                     </div>
                     <div class="book-price" style="margin-top: 0;">
                         <h3 class="book-price__price--large">24 <span class="book-price__currency--large">ر.س</span></h3>
@@ -63,11 +63,11 @@
                     <div class="details__item">
                         <h4 class="details__text">وحدة البيع:Each</h4>
                         <div class="rating">
-                            <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                            <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                            <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                            <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                            <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                            <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                            <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                            <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                            <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                            <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             <a href="" class="book-link--cyan">(15 المراجعات)</a>
                         </div>
                         <p class="details__text">رقم الصنف <b>JBB410156</b>رقم المنتج <b>4</b></p>
@@ -78,7 +78,7 @@
                         <div class="row">
                             <div class="row__item">
                                 <span class="radio"></span>
-                                <a href="" class="row__link">كتاب إلكتروني<img src="assets/images/icon/qus.svg"></a>
+                                <a href="" class="row__link">كتاب إلكتروني<img src="../images/icon/qus.svg"></a>
                             </div>
                             <div class="book-price">
                                 <h3 class="book-price__price">24 <span class="book-price__currency">ر.س</span></h3>
@@ -108,26 +108,26 @@
                     </div>
                     <div class="form">
                         <form action="">
-                            <button class="btn btn--select">1<img src="assets/images/icon/down.svg"></button>
-                            <button class="btn btn--red btn--no-bottom btn--83w js-cart"><img src="assets/images/icon/cart-fff.svg" style="margin-left: 10px;">اضف الى السلة</button>
+                            <button class="btn btn--select">1<img src="../images/icon/down.svg"></button>
+                            <button class="btn btn--red btn--no-bottom btn--83w js-cart"><img src="../images/icon/cart-fff.svg" style="margin-left: 10px;">اضف الى السلة</button>
                         </form>    
                     </div>
                     <div class="info">
-                        <a href="#"><img src="assets/images/icon/lock1.svg">تسوق آمن<img src="assets/images/icon/qus-2.svg"></a>
-                        <a href="#"><img src="assets/images/icon/save2.svg">أصلي ومضمون<img src="assets/images/icon/qus-2.svg"></a>
-                        <a href="#"><img src="assets/images/icon/fast.svg">شحن سريع ومجاني<img src="assets/images/icon/qus-2.svg"></a>
+                        <a href="#"><img src="../images/icon/lock1.svg">تسوق آمن<img src="../images/icon/qus-2.svg"></a>
+                        <a href="#"><img src="../images/icon/save2.svg">أصلي ومضمون<img src="../images/icon/qus-2.svg"></a>
+                        <a href="#"><img src="../images/icon/fast.svg">شحن سريع ومجاني<img src="../images/icon/qus-2.svg"></a>
                     </div>
                     <div class="share">
-                        <button class="btn"><img src="assets/images/icon/share1.svg">مشاركة</button>
-                        <button class="btn"><img src="assets/images/icon/heart.svg">المفضلة</button>
-                        <button class="btn"><img src="assets/images/icon/compare.svg">مقارنة</button>
+                        <button class="btn"><img src="../images/icon/share1.svg">مشاركة</button>
+                        <button class="btn"><img src="../images/icon/heart.svg">المفضلة</button>
+                        <button class="btn"><img src="../images/icon/compare.svg">مقارنة</button>
                     </div>
                 </div>
                 <div class="card card--details card--shadow card--90w">
                     <div class="share share--top-border">
-                        <button class="btn"><img src="assets/images/icon/share1.svg">مشاركة</button>
-                        <button class="btn"><img src="assets/images/icon/heart.svg">المفضلة</button>
-                        <button class="btn"><img src="assets/images/icon/compare.svg">مقارنة</button>
+                        <button class="btn"><img src="../images/icon/share1.svg">مشاركة</button>
+                        <button class="btn"><img src="../images/icon/heart.svg">المفضلة</button>
+                        <button class="btn"><img src="../images/icon/compare.svg">مقارنة</button>
                     </div>
                 </div>
             </section>
@@ -191,7 +191,7 @@
         <section>
             <header class="header">
                 <h1 class="header__title--blue">مراجعات العملاء</h1>
-                <button class="btn btn--blue"><img src="assets/images/icon/plus.svg" alt="plus">اكتب مراجعتك</button>
+                <button class="btn btn--blue"><img src="../images/icon/plus.svg" alt="plus">اكتب مراجعتك</button>
             </header>
             <div class="comment">
                 <div class="comment__item">
@@ -223,10 +223,10 @@
             </header>
             <div class="category category--gap-36">
                 <div class="category__prev">
-                    <a href="#"><img src="assets/images/icon/arrow.svg" alt="السابق"></a>
+                    <a href="#"><img src="../images/icon/arrow.svg" alt="السابق"></a>
                 </div>
                 <article class="card card--shadow card--related">
-                    <img src="assets/images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
+                    <img src="../images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
                     <div class="card__info card__info--min">
                         <div class="book-title">
                             <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -238,7 +238,7 @@
                     </div>
                 </article>
                 <article class="card card--shadow card--related">
-                    <img src="assets/images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
+                    <img src="../images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
                     <div class="card__info card__info--min">
                         <div class="book-title">
                             <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -250,7 +250,7 @@
                     </div>
                 </article>
                 <article class="card card--shadow card--related">
-                    <img src="assets/images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
+                    <img src="../images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
                     <div class="card__info card__info--min">
                         <div class="book-title">
                             <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -262,7 +262,7 @@
                     </div>
                 </article>
                 <article class="card card--shadow card--related">
-                    <img src="assets/images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
+                    <img src="../images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
                     <div class="card__info card__info--min">
                         <div class="book-title">
                             <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -274,7 +274,7 @@
                     </div>
                 </article>
                 <article class="card card--shadow card--related">
-                    <img src="assets/images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
+                    <img src="../images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
                     <div class="card__info card__info--min">
                         <div class="book-title">
                             <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -286,7 +286,7 @@
                     </div>
                 </article>
                 <article class="card card--shadow card--related">
-                    <img src="assets/images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
+                    <img src="../images/product/related1.jpg" class="card__img--min" alt="صورة الكتاب">
                     <div class="card__info card__info--min">
                         <div class="book-title">
                             <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -298,32 +298,32 @@
                     </div>
                 </article>
                 <div class="category__next">
-                    <a href="#"><img src="assets/images/icon/arrow.svg" class="category__arrow--next" alt="التالي"></a>
+                    <a href="#"><img src="../images/icon/arrow.svg" class="category__arrow--next" alt="التالي"></a>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <?php     
+    <?php 
         // Start Footer
-        include_once('./components/footer.php');
+        include_once __DIR__. '/components/footer.php';
         // End Footer
 
         // Start Register Model
-        include_once('./components/modals/regiser.php'); 
+        include_once __DIR__. '/components/modals/register.php'; 
         // End Register Model
 
         // Start Login Model
-        include_once('./components/modals/login.php');
+        include_once __DIR__. '/components/modals/login.php';
         // End Login Model
 
         // Start Image Modal
-        include_once('./components/modals/image.php');
+        include_once __DIR__.'/components/modals/image.php';
         // End Image Modal
         
         // Start Scripts
-        include_once('./components/scripts.php');
+        include_once __DIR__.'/components/scripts.php';
         // End Scripts
     ?>
 
