@@ -14,11 +14,15 @@ class HomeCtrl extends Controller{
     }
 
     public static function category(){
-        self::view('category' /*, $users */);
+        self::view('category');
     }
     
     public static function details(){
-        self::view('details'/*, $users*/);
+        self::view('details');
+    }
+
+    public function dashIndex(){
+        self::view('dashindex');
     }
 }
 

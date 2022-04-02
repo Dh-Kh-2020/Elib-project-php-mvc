@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
-
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
 use coding\app\controllers\UsersCtrl;
@@ -10,20 +9,19 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__ . '\..');
 $dotenv->load();
 
-$app = new AppSystem;       // equals to $app = new AppSystem();
+$config=array(
+    'servername'=>$_ENV['DB_SERVER_NAME'],
+    'dbname'=>$_ENV['DB_NAME'],
+    'dbpass'=>$_ENV['DB_PASSWORD'],
+    'username'=>$_ENV['DB_USERNAME']
+);
+$app=new AppSystem($config);       // equals to $app = new AppSystem();
 
-// ========== MAIN WEB SITE ROUTE ============
+// ========== MAIN PAGES ROUTE ============
 Router::get('/index', [HomeCtrl::class, 'index']);
 Router::get('/category', [HomeCtrl::class, 'category']);
 Router::get('/cart', [HomeCtrl::class, 'cart']);
 Router::get('/details', [HomeCtrl::class, 'details']);
-
-// ========== DASHBOARD ROUTE ================
-Router::get('/users', [UsersCtrl::class, 'show']);
-// Router::get('/register', [UsersCtrl::class, 'register']);
-Router::get('/books', function(){
-    echo "books route path";
-});
-Router::post('/users', [UsersCtrl::class, 'show']);
+Router::get('/admin/dashboard', [HomeCtrl::class, 'dashIndex']);
 
 $app->start();

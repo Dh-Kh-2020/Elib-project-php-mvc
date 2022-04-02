@@ -12,8 +12,8 @@
                     <label for="oassword">كلمة السر</label>
                     <input type="password" name="" id="password" >
                 </div>
-                <a href="#" class="model__link">نسيت؟</a>
-                <button class="btn btn--red btn--md">تسجيل الدخول</button>
+                <a href="/index" class="model__link">نسيت؟</a>
+                <input type="submit" name="login" value="تسجيل الدخول" class="btn btn--red btn--md" >
             </form>
             <label class="model__label" for="register">ليس لديك حساب؟</label>
             <button class="btn register">إنشاء حساب جديد</button>
