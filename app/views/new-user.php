@@ -59,7 +59,7 @@
                       <label class="form-label" for="multicol-confirm-password">الحالة</label>
                       <div class="input-group input-group-merge">
                         <label class="switch">
-                          <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
+                          <input name="user_is_active" value=1 type="checkbox" checked class="switch-input" />
                           <span class="switch-toggle-slider">
                             <span class="switch-on"></span>
                             <span class="switch-off"></span>

@@ -21,7 +21,7 @@ class UsersCtrl extends Controller{
         $user->name = $_POST['username'];
         $user->email = $_POST['email'];
         $user->password = md5($_POST['password']);
-        $user->is_active = isset($_POST['is_active'])?isset($_POST['is_active']):0;
+        $user->is_active = isset($_POST['user_is_active'])?isset($_POST['user_is_active']):0;
         $user->role_id = $_POST['role_id'];
         // self::view('new_user');
         if($user->save())
