@@ -31,8 +31,8 @@ Router::post('/admin/new_user', [UsersCtrl::class, 'saveUser']);
 // Router::get('/register', [UsersCtrl::class, 'register']);
 
 // ========== ROLE ROUTE ================
-Router::get('/admin/roles', [UsersCtrl::class, 'listAllRoles']);
-Router::get('/admin/new_role', [UsersCtrl::class, 'createRole']);
-Router::post('/admin/new_role', [UsersCtrl::class, 'saveRole']);
+Router::get('/admin/roles', [RolesCtrl::class, 'listAllRoles']);
+Router::get('/admin/new_role', [RolesCtrl::class, 'createRole']);
+Router::post('/admin/new_role', [RolesCtrl::class, 'saveRole']);
 
 $app->start();
