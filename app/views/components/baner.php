@@ -3,22 +3,22 @@
 
         <!-- images slide -->
         <div class="banner__item">
-            <img class="banner__img" src="../../public/images/banner/1.jpg" alt="">
+            <img class="banner__img" src="../../images/banner/1.jpg" alt="">
         </div>
         <div class="banner__item">
-            <img class="banner__img" src="../../public/images/banner/2.jpg" alt="">
+            <img class="banner__img" src="../../images/banner/2.jpg" alt="">
         </div>
         <div class="banner__item">
-            <img class="banner__img" src="../../public/images/banner/5.jpg" alt="">
+            <img class="banner__img" src="../../images/banner/5.jpg" alt="">
         </div>
         <div class="banner__item">
-            <img class="banner__img" src="../../public/images/banner/3.jpg" alt="">
+            <img class="banner__img" src="../../images/banner/3.jpg" alt="">
         </div>
         <div class="banner__item">
-            <img class="banner__img" src="../../public/images/banner/4.jpg" alt="">
+            <img class="banner__img" src="../../images/banner/4.jpg" alt="">
         </div>
         <div class="banner__item">
-            <img class="banner__img" src="../../public/images/banner/5.jpg" alt="">
+            <img class="banner__img" src="../../images/banner/5.jpg" alt="">
         </div>
 
         <!-- prev and next slide -->

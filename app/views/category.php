@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <?php include_once('./components/meta.php'); ?>
+    <?php include_once __DIR__. '/components/meta.php'; ?>
     <title>صنف</title>
 </head>
 <body>
     
     <?php 
         // Start Navigation
-        include_once('./components/nav.php'); 
+        include_once __DIR__. '/components/nav.php'; 
         // End Navigation
         
         // Start Header
-        include_once('./components/header.php'); 
+        include_once __DIR__. '/components/header.php';
         // End Header
 
         // Start Banner
-        include_once('./components/baner.php');
+        include_once __DIR__. '/components/baner.php';
         // End Banner
     ?>
 
@@ -35,7 +35,7 @@
             <section>
                 <div class="filter">
                     <h1 class="filter__title">
-                        <span><img src="assets/images/icon/book.svg" alt="book"></span>
+                        <span><img src="../images/icon/book.svg" alt="book"></span>
                         كتب إلكترونية
                     </h1>
                     <div class="filter__box">
@@ -73,7 +73,7 @@
                     <form action="">
                         <div class="search">
                             <input id="search" onkeyup="searchBook()" type="text" class="search__input" placeholder="البحث">
-                            <button class="search__btn"><img src="assets/images/icon/search.svg" alt="بحث"></button>
+                            <button class="search__btn"><img src="../images/icon/search.svg" alt="بحث"></button>
                         </div>
                     </form> 
                     <div>
@@ -88,18 +88,18 @@
                 </div>
                 <div class="category category--gap" style="flex-wrap: wrap;" id="books">
                     <article class="card">
-                        <img src="assets/images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">كن أنت</a></h1>
@@ -113,25 +113,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book2.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book2.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">أبابيل</a></h1>
@@ -145,25 +145,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book3.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book3.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">نون النسوية</a></h1>
@@ -177,25 +177,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book4.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book4.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">لأنك الله</a></h1>
@@ -209,25 +209,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -241,25 +241,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -273,25 +273,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book2.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book2.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -305,25 +305,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book3.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book3.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -337,25 +337,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book4.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book4.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -369,25 +369,25 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
                     <article class="card">
-                        <img src="assets/images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
+                        <img src="../images/product/book1.jpg" class="card__img" alt="صورة الكتاب">
                         <div class="card__info">
                             <div class="book-type">
-                                <img src="assets/images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
+                                <img src="../images/icon/type.svg" class="book-type__icon" alt="نوع الكتاب">
                                 <h1>كتاب إلكتروني</h1>
                             </div>
                             <div class="rating">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
-                                <img src="assets/images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
+                                <img src="../images/icon/rating.svg" class="rating__star" alt="">
                             </div>
                             <div class="book-title">
                                 <h1><a href="#" class="book-title__item">وهوى (كتاب إلكتروني)</a></h1>
@@ -401,9 +401,9 @@
                                 <a href="" class="book-link--cyan">كتاب مطبوع</a>
                             </div>
                             <div class="action">
-                                <a href="#" class="action__item"><img src="assets/images/icon/star.svg" alt="المفضلة" ></a>
-                                <a href="#" class="action__item js-cart"><img src="assets/images/icon/cart.svg" alt="السلة" ></a>
-                                <a href="#" class="action__item"><img src="assets/images/icon/share.svg" alt="مشاركة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/star.svg" alt="المفضلة" ></a>
+                                <a href="#" class="action__item js-cart"><img src="../images/icon/cart.svg" alt="السلة" ></a>
+                                <a href="#" class="action__item"><img src="../images/icon/share.svg" alt="مشاركة" ></a>
                             </div>
                         </div>
                     </article>
@@ -419,23 +419,23 @@
 
     <?php 
         // Start Footer
-        include_once('./components/footer.php');
+        include_once __DIR__. '/components/footer.php';
         // End Footer
 
         // Start Register Model
-        include_once('./components/modals/regiser.php'); 
+        include_once __DIR__. '/components/modals/register.php'; 
         // End Register Model
 
         // Start Login Model
-        include_once('./components/modals/login.php');
+        include_once __DIR__. '/components/modals/login.php';
         // End Login Model
 
         // Start Image Modal
-        include_once('./components/modals/image.php');
+        include_once __DIR__.'/components/modals/image.php';
         // End Image Modal
         
         // Start Scripts
-        include_once('./components/scripts.php');
+        include_once __DIR__.'/components/scripts.php';
         // End Scripts
     ?>
     

@@ -72,6 +72,10 @@ p{
 }
 .nav .nav__link:first-child{
     font-weight: 600;
+    border: none;
+    border-inline-end: 1px solid #e5e9f2;
+    background: #f9fafc;
+    font-family: 'Tajawal';
 }
 .nav__link:hover > svg use{
     fill: var(--blue-color) !important;
