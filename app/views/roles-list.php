@@ -37,29 +37,22 @@
 									<table class="table table-bordered">
 										<thead>
 											<tr>
-												<th>الاسم</th>
-												<th>الإيميل</th>
-												<th>كلمة السر</th>
-												<th>الصلاحية</th>
+												<th>نوع الصلاحية</th>
 												<th>الحالة</th>
-												<th>العمليات</th>
 											</tr>
 										</thead>
 										<tbody> 
-											<?php foreach($params as $user){?>
+											<?php foreach($params as $role){?>
 												<tr>
-													<td><?php echo $user['name'];  		?></td>
-													<td><?php echo $user['email']; 		?></td>
-													<td><?php echo $user['password'];	?></td>
-													<td><?php echo $user['role_id'];	?></td>
-													<td><?php if($user['is_active'] == 1){ ?>    
+													<td><?php echo $role['name'];  		?></td>
+													<td><?php if($role['is_active'] == 1){ ?>    
 															<span class="badge bg-label-success me-1">مفعل</span>
 														<?php }
 															else {?>
 															<span class="badge bg-label-danger me-1">موقف</span>
 														<?php } ?>
 													</td>
-													<td><a href="/edit_user/<?php echo $user['id']; ?>" class="btn btn-icon btn-outline-dribbble">
+													<td><a href="/edit_role/<?php echo $role['id']; ?>" class="btn btn-icon btn-outline-dribbble">
 															<i class="tf-icons bx bx-edit-alt me-1"></i>
 														</a>
 														<button type="button" class="btn btn-icon btn-outline-dribbble">
