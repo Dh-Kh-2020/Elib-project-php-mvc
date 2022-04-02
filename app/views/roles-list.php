@@ -28,7 +28,7 @@
 
 					<!-- Content -->
 					<div class="container-xxl flex-grow-1 container-p-y">
-						<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>المستخدمون</h4>
+						<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>الصلاحيات</h4>
 
 						<!-- Bordered Table -->
 						<div class="card"> 
@@ -39,6 +39,7 @@
 											<tr>
 												<th>نوع الصلاحية</th>
 												<th>الحالة</th>
+												<th>العمليات</th>
 											</tr>
 										</thead>
 										<tbody> 
@@ -52,7 +53,7 @@
 															<span class="badge bg-label-danger me-1">موقف</span>
 														<?php } ?>
 													</td>
-													<td><a href="/edit_role/<?php echo $role['id']; ?>" class="btn btn-icon btn-outline-dribbble">
+													<td><a href="/admin/edit_role?<?php echo $role['id']; ?>" class="btn btn-icon btn-outline-dribbble">
 															<i class="tf-icons bx bx-edit-alt me-1"></i>
 														</a>
 														<button type="button" class="btn btn-icon btn-outline-dribbble">

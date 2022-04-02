@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 
 
 
@@ -89,7 +89,7 @@
 
   
 <div class="app-brand demo ">
-  <a href="index-2.html" class="app-brand-link">
+  <a href="/admin/dashboard" class="app-brand-link">
     <span class="app-brand-logo demo">
 
 <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -140,7 +140,7 @@
 
 <ul class="menu-inner ">
   <!-- Dashboards -->
-  <li class="menu-item">
+  <!-- <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
       <i class="menu-icon tf-icons bx bx-home-circle"></i>
       <div data-i18n="Dashboards">Dashboards</div>
@@ -152,8 +152,10 @@
         </a>
       </li>
     </ul>
+  </li> -->
+  <li class="menu-header small text-uppercase">
+    <span class="menu-header-text">Dashboard</span>
   </li>
-
   <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
       <i class="menu-icon tf-icons bx bx-user"></i>
@@ -256,16 +258,16 @@
   <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
       <i class="menu-icon tf-icons bx bx-user"></i>
-      <div data-i18n="الصلاحيات">الصلاحيات</div>
+      <div data-i18n="إدارة الصلاحيات">إدراة الصلاحيات</div>
     </a>
     <ul class="menu-sub">
     <li class="menu-item">
-        <a href="/add_role" class="menu-link">
-          <div data-i18n="اضافة صلاحية">اضافة صلاحية</div>
+        <a href="/admin/new_role" class="menu-link">
+          <div data-i18n="اضافة صلاحية">إضافة صلاحية</div>
         </a>
       </li>
       <li class="menu-item">
-        <a href="/roles" class="menu-link">
+        <a href="/admin/roles" class="menu-link">
           <div data-i18n="عرض الصلاحيات">عرض الصلاحيات</div>
         </a>
       </li>
