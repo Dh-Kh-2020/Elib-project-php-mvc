@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <?php include_once('./components/meta.php'); ?>
+    <?php include_once __DIR__. '/components/meta.php'; ?>
     <title>السلّة</title>
 </head>
 <body>
 
     <?php 
         // Start Navigation
-        include_once('./components/nav.php'); 
+        include_once __DIR__. '/components/nav.php'; 
         // End Navigation
         
         // Start Header
-        include_once('./components/header.php'); 
+        include_once __DIR__. '/components/header.php'; 
         // End Header
     ?>
 
     <main>
         <header class="header header--cart">
-            <h1 class="header__title--blue"><img src="assets/images/icon/cart-1.svg" alt=""> السلّة <span>(3منتجات)</span></h1>
+            <h1 class="header__title--blue"><img src="../images/icon/cart-1.svg" alt=""> السلّة <span>(3منتجات)</span></h1>
         </header>
         <div class="grid grid--2-column">
             <section>
                 <article class="card card--shadow card--90w">
                     <div class="header flex">
-                        <img src="assets/images/product/related1.jpg" alt="" style="width: 6%; margin-left: 10px;">
+                        <img src="../images/product/related1.jpg" alt="" style="width: 6%; margin-left: 10px;">
                         <div class="flex__right">
                             <h1 class="header__title--blue" style="margin-bottom: 10px;">البداية والنهاية الجزء الأول (كتاب إلكتروني)</h1>
                             <p><i>منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير</i></p>
@@ -48,12 +48,12 @@
                         </div>
                     </div>
                     <div class="card__footer">
-                        <a class="card__delete"><img src="assets/images/icon/delete.svg">احذف</a>
+                        <a class="card__delete"><img src="../images/icon/delete.svg">احذف</a>
                     </div>
                 </article>
                 <article class="card card--shadow card--90w">
                     <div class="header flex">
-                        <img src="assets/images/product/related1.jpg" alt="" style="width: 6%; margin-left: 10px;">
+                        <img src="../images/product/related1.jpg" alt="" style="width: 6%; margin-left: 10px;">
                         <div class="flex__right">
                             <h1 class="header__title--blue" style="margin-bottom: 10px;">البداية والنهاية الجزء الأول (كتاب إلكتروني)</h1>
                             <p><i>منتج قابل للخصم لحاملي بطاقة خصم مكتبة جرير</i></p>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <div class="card__footer">
-                        <a class="card__delete"><img src="assets/images/icon/delete.svg">احذف</a>
+                        <a class="card__delete"><img src="../images/icon/delete.svg">احذف</a>
                     </div>
                 </article>
             </section>
@@ -118,23 +118,23 @@
 
     <?php 
         // Start Footer
-        include_once('./components/footer.php');
+        include_once __DIR__. '/components/footer.php';
         // End Footer
 
         // Start Register Model
-        include_once('./components/modals/regiser.php'); 
+        include_once __DIR__. '/components/modals/register.php'; 
         // End Register Model
 
         // Start Login Model
-        include_once('./components/modals/login.php');
+        include_once __DIR__. '/components/modals/login.php';
         // End Login Model
 
         // Start Image Modal
-        include_once('./components/modals/image.php');
+        include_once __DIR__.'/components/modals/image.php';
         // End Image Modal
         
         // Start Scripts
-        include_once('./components/scripts.php');
+        include_once __DIR__.'/components/scripts.php';
         // End Scripts
     ?>
     

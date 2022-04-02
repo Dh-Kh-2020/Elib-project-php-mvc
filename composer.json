@@ -1,0 +1,17 @@
+{
+    "name": "engdhohakhorasani/elib-project-php-mvc",
+    "autoload": {
+        "psr-4": {
+            "coding\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dhoha Alkhorasani",
+            "email": "raihanahit2016@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
