@@ -1,5 +1,6 @@
 <?php
 namespace coding\app\system;
+use coding\app\config\DB;
 
 class AppSystem {
 
@@ -7,8 +8,11 @@ class AppSystem {
     public Response $response;
     public Router $router;
     public static AppSystem $appSystem;
+    public static DB $db;
 
-    function __construct(){
+    function __construct(array $dbConfig){
+
+        self::$db = new DB($dbConfig);
         self::$appSystem = $this;
         $this->request = new Request();
         $this->response = new Response();

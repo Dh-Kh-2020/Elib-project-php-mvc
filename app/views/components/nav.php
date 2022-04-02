@@ -1,10 +1,10 @@
 <nav class="nav">
-    <a href="" class="nav__link nav__link--100w login">
+    <button class="nav__link nav__link--100w login">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon" width="16"  height="16" ><defs><symbol viewBox="0 0 50 50" id="customer" xmlns="http://www.w3.org/2000/svg"><path d="M34.8 33.8c-1.698-.698-3.8-1.6-3.8-2.3V27c2.5-1.898 4-4.898 4-8v-6c0-5.5-4.5-10-10-10S15 7.5 15 13v6c0 3.102 1.5 6.2 4 8v4.5c0 .602-2.102 1.5-3.8 2.3C11.101 35.5 5 38.103 5 45v1h40v-1c0-6.898-6.102-9.5-10.2-11.2z"></path></symbol></defs>
             <use xlink:href="#customer" fill="#42526E"></use>
         </svg>
         ادخل لحسابك أو سجل الآن
-    </a>
+    </button>
     <a href="/index" class="nav__link">
         <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--default list__icon" width="16"  height="16" ><defs><symbol viewBox="0 0 24 24" id="star" xmlns="http://www.w3.org/2000/svg"><path d="M12 0L8.75 8.125 0 8.719l6.719 5.625-2.125 8.469L12 18.155l7.406 4.657-2.125-8.47L24 8.72l-8.75-.594z"></path></symbol></defs>
             <use xlink:href="#star" fill="#42526E"></use>
