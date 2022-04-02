@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets/" data-template="vertical-menu-template-semi-dark">
 <head>
-	<title>Add New Role - Pages | Admin Dashboard</title>
+	<title>Edit a Role - Pages | Admin Dashboard</title>
 	<?php
 		include_once __DIR__. '/components/dashMeta.php';
 		include_once __DIR__. '/components/upperDashScripts.php';
@@ -28,7 +28,7 @@
 
 					<!-- Content -->
 					<div class="container-xxl flex-grow-1 container-p-y">
-          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>أضف صلاحية</h4>
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>عدل على الصلاحية</h4>
 
 						<!-- Bordered Table -->
 						<div class="card mb-4">

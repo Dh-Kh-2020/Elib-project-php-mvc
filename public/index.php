@@ -2,8 +2,9 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 use coding\app\system\AppSystem;
 use coding\app\system\Router;
-use coding\app\controllers\UsersCtrl;
 use coding\app\controllers\HomeCtrl;
+use coding\app\controllers\UsersCtrl;
+use coding\app\controllers\RolesCtrl;
 use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(__DIR__ . '\..');
@@ -34,5 +35,6 @@ Router::post('/admin/new_user', [UsersCtrl::class, 'saveUser']);
 Router::get('/admin/roles', [RolesCtrl::class, 'listAllRoles']);
 Router::get('/admin/new_role', [RolesCtrl::class, 'createRole']);
 Router::post('/admin/new_role', [RolesCtrl::class, 'saveRole']);
+Router::get('/admin/edit_role{id}', [RolesCtrl::class, 'editRole']);
 
 $app->start();

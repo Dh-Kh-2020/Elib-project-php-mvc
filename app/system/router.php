@@ -33,6 +33,7 @@ class Router{
         $method = self::$request->getRequestMethod();
 
         $callback = self::$routes[$method][$route];
+        // print_r($callback);
 
         if(isset($callback)){
             if(is_array($callback)){
