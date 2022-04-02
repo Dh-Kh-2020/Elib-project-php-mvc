@@ -21,17 +21,17 @@ class UsersCtrl extends Controller{
         $user->name = $_POST['username'];
         $user->email = $_POST['email'];
         $user->password = md5($_POST['password']);
-        $user->is_active = $_POST['is_active'];
+        $user->is_active = isset($_POST['is_active'])?1:0;
         $user->role_id = $_POST['role_id'];
-        self::view('new_user');
+        // self::view('new_user');
         if($user->save())
-            $this->view('dashboard',['success'=>'data inserted successful']);
+            self::view('new-user',['success'=>'data inserted successful']);
         else 
-            $this->view('dashboard',['danger'=>'can not add data']);
+            self::view('new-user',['danger'=>'can not add data']);
     }
 
     public function register(){
-        self::view('new_user');
+        self::view('new-user');
     }
     
     public function delete(){
