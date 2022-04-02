@@ -24,7 +24,7 @@ Router::get('/cart', [HomeCtrl::class, 'cart']);
 Router::get('/details', [HomeCtrl::class, 'details']);
 Router::get('/admin/dashboard', [HomeCtrl::class, 'dashIndex']);
 
-// ========== DASHBOARD ROUTE ================
+// ========== USERE ROUTE ================
 Router::get('/admin/users', [UsersCtrl::class, 'listAllUsers']);
 Router::get('/admin/new_user', [UsersCtrl::class, 'createUser']);
 Router::post('/admin/new_user', [UsersCtrl::class, 'saveUser']);
