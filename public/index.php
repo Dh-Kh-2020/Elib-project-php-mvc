@@ -5,6 +5,7 @@ use coding\app\system\Router;
 use coding\app\controllers\HomeCtrl;
 use coding\app\controllers\UsersCtrl;
 use coding\app\controllers\RolesCtrl;
+use coding\app\controllers\CategoryCtrl;
 use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(__DIR__ . '\..');
@@ -36,5 +37,11 @@ Router::get('/admin/roles', [RolesCtrl::class, 'listAllRoles']);
 Router::get('/admin/new_role', [RolesCtrl::class, 'createRole']);
 Router::post('/admin/new_role', [RolesCtrl::class, 'saveRole']);
 Router::get('/admin/edit_role{id}', [RolesCtrl::class, 'editRole']);
+
+// ========== CATEGORY ROUTE ================
+Router::get('/admin/categories', [CategoryCtrl::class, 'listAllCategories']);
+Router::get('/admin/new_category', [CategoryCtrl::class, 'createCategory']);
+Router::post('/admin/new_category', [CategoryCtrl::class, 'saveCategory']);
+Router::get('/admin/edit_category{id}', [CategoryCtrl::class, 'editCategory']);
 
 $app->start();

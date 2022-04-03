@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2022 at 09:49 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.1
+-- Generation Time: Apr 03, 2022 at 08:26 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `elib`
+-- Database: `e-library-project`
 --
 
 -- --------------------------------------------------------
@@ -33,8 +33,8 @@ CREATE TABLE `authors` (
   `phone` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `bio` text DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp(),
   `created_by` int(5) NOT NULL,
   `is_active` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -197,9 +197,18 @@ CREATE TABLE `roles` (
   `id` int(2) NOT NULL,
   `name` varchar(255) NOT NULL,
   `is_active` tinyint(1) NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id`, `name`, `is_active`, `created_at`, `updated_at`) VALUES
+(1, 'أدمن', 1, '2022-04-02 10:44:16', '2022-04-02 10:44:16'),
+(2, 'عميل', 1, '2022-04-02 10:45:26', '2022-04-02 10:45:26'),
+(4, 'صلاحية ما ', 0, '2022-04-02 18:45:17', '2022-04-02 18:45:17');
 
 -- --------------------------------------------------------
 
@@ -212,11 +221,22 @@ CREATE TABLE `users` (
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `phone` varchar(255) DEFAULT NULL,
   `is_active` tinyint(1) NOT NULL,
   `role_id` int(1) NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `phone`, `is_active`, `role_id`, `created_at`, `updated_at`) VALUES
+(17, 'Afnan Alkhorasani', 'Afnan@gmail.com', 'b69b51a4ed80a862595cfae42023cdc3', NULL, 0, 1, '2022-04-02 18:40:58', '2022-04-02 18:40:58'),
+(18, 'Dhoha Alkhorasani', 'raihanahit2016@gmail.com', '792d641da35dcfd12de8880bf5b1638e', NULL, 0, 1, '2022-04-02 18:41:48', '2022-04-02 18:41:48'),
+(19, 'Mohammed Alkhorasani', 'Mohammed@gmail.com', '99f2d64ab56b24537ae2af4cfee64c55', NULL, 0, 1, '2022-04-02 18:42:48', '2022-04-02 18:42:48'),
+(20, 'Abrar_kh', 'Abrar@gamil.com', '102a2a0a34c9b3957cf286107bd45b1b', NULL, 1, 1, '2022-04-02 18:48:23', '2022-04-02 18:48:23');
 
 -- --------------------------------------------------------
 
@@ -290,7 +310,8 @@ CREATE TABLE `user_tokens` (
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `created_by` (`created_by`);
 
 --
 -- Indexes for table `cities`
@@ -323,10 +344,17 @@ ALTER TABLE `publishers`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `roles`
+--
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `role_id` (`role_id`);
 
 --
 -- Indexes for table `user_payment_methods`
@@ -338,6 +366,7 @@ ALTER TABLE `user_payment_methods`
 -- Indexes for table `user_profiles`
 --
 ALTER TABLE `user_profiles`
+  ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `user_is` (`user_id`);
 
 --
@@ -381,10 +410,16 @@ ALTER TABLE `publishers`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `roles`
+--
+ALTER TABLE `roles`
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `user_payment_methods`
@@ -393,14 +428,32 @@ ALTER TABLE `user_payment_methods`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `user_profiles`
+--
+ALTER TABLE `user_profiles`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+
+--
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `categories`
+--
+ALTER TABLE `categories`
+  ADD CONSTRAINT `categories_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `users`
 --
 ALTER TABLE `users`
-  ADD CONSTRAINT `user_pforiles_pk_fk` FOREIGN KEY (`id`) REFERENCES `user_profiles` (`user_id`);
+  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `user_profiles`
+--
+ALTER TABLE `user_profiles`
+  ADD CONSTRAINT `user_profiles_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

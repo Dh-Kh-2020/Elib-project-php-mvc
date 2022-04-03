@@ -180,17 +180,17 @@
     <a href="javascript:void(0);" class="menu-link menu-toggle">
       <i class="menu-icon tf-icons bx bx-category"></i>
       <!-- <i class="fa-solid fa-cubes"></i> -->
-      <div data-i18n="القسم">القسم</div>
+      <div data-i18n="إدارة الأقسام">إدارة الأقسام</div>
     </a>
     <ul class="menu-sub">
     <li class="menu-item">
-        <a href="/add_category" class="menu-link">
+        <a href="/admin/new_category" class="menu-link">
           <div data-i18n="اضافة قسم">اضافة قسم</div>
         </a>
       </li>
 
       <li class="menu-item">
-        <a href="/categories" class="menu-link">
+        <a href="/admin/categories" class="menu-link">
           <div data-i18n="عرض الاقسام">عرض الاقسام</div>
         </a>
       </li>
