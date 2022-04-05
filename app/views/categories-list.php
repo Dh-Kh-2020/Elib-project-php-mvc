@@ -55,12 +55,19 @@
 															<span class="badge bg-label-danger me-1">موقف</span>
 														<?php } ?>
 													</td>
-													<td><a href="/admin/edit_category?<?php echo $role['id']; ?>" class="btn btn-icon btn-outline-dribbble">
+													<td><a href="/admin/edit_category/<?php echo $category['id'];?>" class="btn btn-icon btn-outline-dribbble">
 															<i class="tf-icons bx bx-edit-alt me-1"></i>
 														</a>
-														<button type="button" class="btn btn-icon btn-outline-dribbble">
-															<i class="tf-icons bx bx-trash me-1"></i>
-														</button>
+														<form action="/admin/remove_category/<?=  $category['id']; ?>" method="POST" style="display: inline-block;">
+															<button type="submit" class="btn btn-icon btn-outline-dribbble">
+															<?php if($category['is_active']==1) {?>    
+																<i class="tf-icons bx bx-trash me-1"></i>
+															<?php }
+															else {?>
+																<i class="tf-icons bx bx-refresh me-1"></i>
+															<?php } ?>
+															</button> 
+														</form> 
 													</td>
 												</tr>
 											<?php } ?>

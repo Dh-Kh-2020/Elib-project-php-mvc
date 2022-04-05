@@ -42,6 +42,8 @@ Router::get('/admin/edit_role{id}', [RolesCtrl::class, 'editRole']);
 Router::get('/admin/categories', [CategoryCtrl::class, 'listAllCategories']);
 Router::get('/admin/new_category', [CategoryCtrl::class, 'createCategory']);
 Router::post('/admin/new_category', [CategoryCtrl::class, 'saveCategory']);
-Router::get('/admin/edit_category{id}', [CategoryCtrl::class, 'editCategory']);
+Router::get('/admin/edit_category/{id}', [CategoryCtrl::class, 'editCategory']);
+Router::post('/admin/edit_category', [CategoryCtrl::class, 'updateCategory']);
+Router::post('/admin/remove_category/{id}',[CategoryCtrl::class,'remove']);
 
 $app->start();
